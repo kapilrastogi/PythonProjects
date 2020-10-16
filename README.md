@@ -7,7 +7,6 @@ Top level package can have __main__.py file, this is the file that runs with pyt
 ## Imports
 python packages don't have knowledge about their siblings but they can reference their parent by (..)
 
-
 # References
 * Import system https://docs.python.org/3/reference/import.html
 * Relative vs absolute imports https://realpython.com/absolute-vs-relative-python-imports/
@@ -19,7 +18,13 @@ python packages don't have knowledge about their siblings but they can reference
 * Package structuring https://docs.python-guide.org/writing/structure/
 
 # Run
-python -m <module-name> e.g. python -m collection
+python -m <module-name> e.g. python -m src 
+
+## Testing
+https://docs.pytest.org/en/stable/
+Python testing including test runners https://realpython.com/python-testing/
+
+python -m pytest test_mutable_immutable.py
 
 # TODO
 * What is --system-site-package
