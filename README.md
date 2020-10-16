@@ -15,5 +15,11 @@ python packages don't have knowledge about their siblings but they can reference
 * Zen of python https://www.python.org/dev/peps/pep-0020/
 * Implicit namespace package https://www.python.org/dev/peps/pep-0420/
 
+* Package structuring https://dev.to/codemouse92/dead-simple-python-project-structure-and-imports-38c6
+* Package structuring https://docs.python-guide.org/writing/structure/
+
+# Run
+python -m <module-name> e.g. python -m collection
+
 # TODO
 * What is --system-site-package
