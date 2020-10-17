@@ -2,6 +2,7 @@
 
 # sequence types in python - list & tuple
 
+
 def test_list():
     my_list = ["apple", "banana", "mango"]
     print(my_list)
@@ -78,3 +79,8 @@ def test_list():
 
     # returns first index of the value
     assert (final_list.index('b', 2) == 5)
+
+    # remove and return item at the index (last index is the default)
+    assert (final_list.pop() == 'b')
+    assert (final_list.pop() == 'c')
+    assert (final_list.pop(2) == 'wow')
