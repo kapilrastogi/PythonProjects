@@ -47,4 +47,5 @@ def test_dict():
     print(new_dict)
 
     assert dict1.pop("Ticker") == "MSFT"  # pop the item given the key and returns value
+    assert dict1.pop("Foo", "bar") == "bar"  # if the key is not found then return the default value
     print(new_dict.popitem())  # pops the last item added to dictionary
