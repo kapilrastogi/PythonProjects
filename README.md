@@ -17,6 +17,8 @@ python packages don't have knowledge about their siblings but they can reference
 * Package structuring https://dev.to/codemouse92/dead-simple-python-project-structure-and-imports-38c6
 * Package structuring https://docs.python-guide.org/writing/structure/
 
+* Anti pattern http://docs.quantifiedcode.com/python-anti-patterns/correctness/not_using_get_to_return_a_default_value_from_a_dictionary.html
+
 # Run
 python -m <module-name> e.g. python -m src 
 

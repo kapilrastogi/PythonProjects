@@ -1,4 +1,14 @@
 #!/usr/bin/python
+from src import customdict
+
+
+def test_frequency_map():
+    my_list = ["a", "b", "c", "a"]
+    c_dict = customdict.CustomDict()
+    result = c_dict.frequency_map_ex(my_list)
+    print("")
+    for x in result:
+        print(x + ":" + str(result.get(x)))
 
 
 def test_dict():
