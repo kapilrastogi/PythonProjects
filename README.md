@@ -7,6 +7,16 @@ Top level package can have __main__.py file, this is the file that runs with pyt
 ## Imports
 python packages don't have knowledge about their siblings but they can reference their parent by (..)
 
+# Java to python mapping
+| Java             |  Python       |
+| ---------------- | ------------- |
+| map              | dict, defaultdict, Counter|
+| LinkedHashMap    | OrderedDict |
+| set              | set|
+| stacks & queues  | deque         |
+| array            | list|
+| PriorityQueue    | heapq|
+
 # References
 * Import system https://docs.python.org/3/reference/import.html
 * Relative vs absolute imports https://realpython.com/absolute-vs-relative-python-imports/
@@ -29,4 +39,10 @@ Python testing including test runners https://realpython.com/python-testing/
 python -m pytest test_mutable_immutable.py
 
 # TODO
+* heapq custom comparator
 * What is --system-site-package
+* Decorator, context manager, dynamic typing
+* ChainMap & OrderedDict https://docs.python.org/3/library/collections.html
+* itertools https://docs.python.org/3/library/itertools.html
+* functools https://docs.python.org/3/library/functools.html
+* map, filter & reduce https://book.pythontips.com/en/latest/map_filter.html

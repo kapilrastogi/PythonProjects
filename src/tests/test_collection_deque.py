@@ -67,3 +67,20 @@ def test_remove_and_rotate():
 
     d.remove(1)  # removes the first instance of the value (other 1 will still be left)
     assert d.index(1) == 4
+
+    d.rotate(1)  # rotate to right
+    assert d.index(1) == 5
+    d.rotate(-1)  # rotate to left
+    assert d.index(1) == 4
+
+
+def test_max_len():
+    print('')
+    my_list = [1, 5, 1, 3]
+    d = deque(reversed(my_list), 5)
+    d.extend('ghi')
+    print(d)  # deque([5, 1, 'g', 'h', 'i'], maxlen=5) at this point
+
+    d.append(10)
+    assert d.pop() == 10
+    assert d.popleft() == 1
