@@ -71,10 +71,14 @@ def test_str_processing():
     assert "abc".startswith("ab") is True
     assert "abc".endswith("c") is True
 
-    # test alphabetic numeric
+    # test alphabetic numeric uppercase
     assert "ab17".isalpha() is False
     assert "17".isnumeric() is True
     assert "22".isdigit() is True
+    assert "ABC" == "abc".upper()
+
+    # reverse a string using slicing
+    assert "cba" == "abc"[::-1]
 
     # convert string value to int (or int to string)
     assert 15 == int("15")

@@ -13,9 +13,12 @@ python packages don't have knowledge about their siblings but they can reference
 | map              | dict, defaultdict, Counter|
 | LinkedHashMap    | OrderedDict |
 | set              | set|
-| stacks & queues  | deque         |
+| stacks & queues  | deque |
 | array            | list|
-| PriorityQueue    | heapq|
+| PriorityQueue    | heapq, PriorityQueue (thread-safe)|
+
+# Notes
+* Difference between PriorityQueue and heapq - PriorityQueue is a thread-safe class which wraps heapq (which is not thread-safe). 
 
 # References
 * Import system https://docs.python.org/3/reference/import.html
@@ -40,6 +43,9 @@ python -m pytest test_mutable_immutable.py
 
 # TODO
 * heapq custom comparator
+* Matrix (2D array)
+* Sorting using comparator
+* Text processing services https://docs.python.org/3/library/text.html
 * What is --system-site-package
 * Decorator, context manager, dynamic typing
 * ChainMap & OrderedDict https://docs.python.org/3/library/collections.html
